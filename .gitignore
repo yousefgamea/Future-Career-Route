@@ -1,0 +1,17 @@
+# Gerçek veritabanı bağlantı bilgilerini (repo public olduğu için) yüklemiyoruz.
+# baglanti.example.php şablonunu kopyalayıp kendi baglanti.php'ini oluştur.
+baglanti.php
+
+# Kullanıcıların/mentorların yüklediği gerçek dosyalar (fotoğraf, CV, video,
+# ders materyali) - hem repo boyutunu şişirmesin hem de test sırasında
+# yüklenen gerçek/kişisel dosyalar public repoya gitmesin diye hariç
+# tutuyoruz. Klasörün kendisi (uploads/.gitkeep ile) repoda kalıyor.
+uploads/*
+!uploads/.gitkeep
+
+# XAMPP/OS/editör kalıntıları
+*.log
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
